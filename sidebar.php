@@ -104,8 +104,8 @@
                                 <li><a href="view_roomtype.php">View Room Type</a></li>
                                 <li><a href="add_room.php">Add Room</a></li>
                                 <li><a href="view_room.php">View Room</a></li>
-                                <li><a href="add_exam.php">Add Exam</a></li>
-                                <li><a href="view_exam.php">View Exam</a></li>
+                                <!-- <li><a href="add_exam.php">Add Exam</a></li>
+                                <li><a href="view_exam.php">View Exam</a></li> -->
                                 <li><a href="add_allotment.php">Add Allotment</a></li>
                                 <li><a href="view_allotment.php">View Allotment</a></li>
                                 <li><a href="today_exam.php">Today's Exam</a></li>

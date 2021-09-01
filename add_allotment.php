@@ -95,6 +95,31 @@
                         </div>
                     </div>
                 </div>
+                <div class="form-group">
+                                            <div class="row">
+                                            <label class="col-sm-3 control-label" for="date">Quiz Date:</label>
+                                                <div class="col-sm-9">
+                                                    <input required type="date" name="quiz_date" id="date" class="form-control" placeholder=" Date" required="true" title="Choose your desired date" min="<?php echo date('Y-m-d'); ?>"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <label class="col-sm-3 control-label">Start Time</label>
+                                                <div class="col-sm-9">
+                                                  <input type="time" name="start_time" class="form-control" placeholder=" Start Time" required="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <label class="col-sm-3 control-label">End Time</label>
+                                                <div class="col-sm-9">
+                                                  <input type="time" name="end_time" class="form-control" placeholder=" End Time" required="">
+                                                </div>
+                                            </div>
+                                        </div>
+                
                 
                 <div class="form-group">
                     <div class="row">

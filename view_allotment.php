@@ -53,12 +53,12 @@ if(isset($_GET['id']))
                                   $sql1 = "SELECT * FROM  `allot`";
                                    $result1 = $conn->query($sql1);
                                    while($row = $result1->fetch_assoc()) {
-                                   $s1 = "SELECT * FROM `exam` WHERE id='".$row['exam_id']."'";
+                                   $s1 = "SELECT * FROM `tbl_subject` WHERE id='".$row['subject_id']."'";
                                     $sr = $conn->query($s1);
                                     $sres = mysqli_fetch_array($sr); 
                                       ?>
                                             <tr>
-                                                <td><?php echo $sres['name']; ?></td>
+                                                <td><?php echo $sres['subjectname']; ?></td>
                                                 <td>
                                                   <a title="View Room Details" href="view_allotment_detail.php?id=<?=$row['id'];?>"><button type="button" class="btn btn-xs btn-primary" ><i class="fa fa-eye"></i></button></a>
 
