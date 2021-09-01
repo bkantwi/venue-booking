@@ -108,12 +108,14 @@
                                 <li><a href="view_exam.php">View Exam</a></li>
                                 <li><a href="add_allotment.php">Add Allotment</a></li>
                                 <li><a href="view_allotment.php">View Allotment</a></li>
+                                <li><a href="today_exam.php">Today's Exam</a></li>
+                                <li><a href="report_exam.php">All Exam</a></li>
                             <!-- </ul>
                         </li> -->
                     <?php } } ?>
                    
                   <?php if(isset($useroles)){  if(in_array("manage_user",$useroles)){ ?> 
-                         <li class="nav-label">Users</li> 
+                         <!-- <li class="nav-label">Users</li>  -->
                         <li> <a class="has-arrow" href="#" aria-expanded="false"><i class="fa fa-user-plus"></i><span class="hide-menu">User Management</span></a>
                             <ul aria-expanded="false" class="collapse">
                             <?php if(isset($useroles)){  if(in_array("add_user",$useroles)){ ?> 
@@ -132,19 +134,19 @@
                             </ul>
                         </li>
 
-                         <li> <a class="has-arrow" href="#" aria-expanded="false"><i class="fa fa-cog"></i><span class="hide-menu">Setting</span></a>
+                         <!-- <li> <a class="has-arrow" href="#" aria-expanded="false"><i class="fa fa-cog"></i><span class="hide-menu">Setting</span></a>
                             <ul aria-expanded="false" class="collapse">
                                <li><a href="manage_website.php">Appearance Management</a></li>
                               <li><a href="email_config.php">Email Management</a></li>
                             </ul>
-                        </li> 
-                        <li class="nav-label">Exam Details</li> 
+                        </li>  -->
+                        <!-- <li class="nav-label">Exam Details</li>  -->
                         <!-- <li>  <a class="has-arrow" href="#" aria-expanded="false"><i class="fa fa-file"></i><span class="hide-menu">Report Management</span></a>
                             <ul aria-expanded="false" class="collapse"> -->
-                                <li><a href="today_exam.php">Today's Exam</a></li>
-                                <li><a href="report_exam.php">All Exam</a></li>
+                                <!-- <li><a href="today_exam.php">Today's Exam</a></li>
+                                <li><a href="report_exam.php">All Exam</a></li> -->
                             <!-- </ul> -->
-                        </li>
+                        <!-- </li> -->
                     <?php } ?>
                     </ul>   
                 </nav>
