@@ -76,7 +76,7 @@ $classname = $row['classname'];
                                             <div class="row">
                                                 <label class="col-sm-3 control-label">Class Name</label>
                                                 <div class="col-sm-9">
-                                                  <input type="text" name="classname" class="form-control" placeholder="Class Name" id="event" onkeydown="return alphaOnly(event);" value="<?php echo $classname; ?>" required="">
+                                                  <input type="text" name="classname" class="form-control" placeholder="Class Name" id="event" value="<?php echo $classname; ?>" required="">
                                                 </div>
                                             </div>
                                         </div>

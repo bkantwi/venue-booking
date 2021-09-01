@@ -47,14 +47,14 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-group">
+                                        <!-- <div class="form-group">
                                             <div class="row">
                                                 <label class="col-sm-3 control-label">Class Strenght</label>
                                                 <div class="col-sm-9">
                                                   <input type="number" min="0" name="strenght" class="form-control" placeholder=" Strenght" required="">
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <button type="submit" name="btn_save" class="btn btn-primary btn-flat m-b-30 m-t-30">Submit</button>
                                     </form>
                                 </div>

@@ -107,7 +107,7 @@ $class_id = $row['class_id'];
                                             <div class="row">
                                                 <label class="col-sm-3 control-label">Subject Name</label>
                                                 <div class="col-sm-9">
-                                                  <input type="text" name="subjectname" class="form-control" placeholder="Subject Name" id="event" onkeydown="return alphaOnly(event);" value="<?php echo $subjectname; ?>" required="">
+                                                  <input type="text" name="subjectname" class="form-control" placeholder="Subject Name" id="event" value="<?php echo $subjectname; ?>" required="true">
                                                 </div>
                                             </div>
                                         </div>
