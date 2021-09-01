@@ -88,7 +88,7 @@ $row_login = mysqli_fetch_array($result_login);
         <div class="panel">
             <div class="row">
                 <div class="col liquid">
-                    <h4><i class="fas fa-drafting-compass"></i> Venue Booking System</h4>
+                    <h4><i class="fas fa-drafting-compass"></i> NEC Booking System </h4>
 
                     <!-- Owl-Carousel -->
 
@@ -100,17 +100,17 @@ $row_login = mysqli_fetch_array($result_login);
 
                     <!-- /Owl-Carousel -->
 
-                    <div class="follow">
+                    <!-- <div class="follow">
                         Follow us <i class="fab fa-facebook-f"></i>
                         <i class="fab fa-twitter"></i>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col login">
 
                     
                     <form method="POST">
                         <div class="titles">
-                            <h6>We keep everything</h6>
+                            <h6>Book A Venue</h6>
                             <h3>Ready to Login</h3>
                         </div>
                         <div class="form-group">

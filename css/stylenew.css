@@ -4,8 +4,8 @@
 html, body{
     height: 100%;
     overflow: hidden;
-    background: #ffe259;
-    background: var(--mango-gradient);
+    background: blue;
+    /* background: var(--mango-gradient); */
 }
 
 /* Variables */
@@ -37,7 +37,7 @@ html, body{
     display: grid;
     grid-template-columns: 65% 35%;
     height: 100%;
-    background: #fff;
+    background: white;
 }
 
 .liquid{
