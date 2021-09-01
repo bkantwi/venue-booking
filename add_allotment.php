@@ -64,9 +64,10 @@
                 </div>
                 <div class="form-group">
                     <div class="row">
-                        <label class="col-sm-3 control-label">Class Capacity</label>
+                        <label class="col-sm-3 control-label">Level</label>
                             <div class="col-sm-9">
                                 <select type="text" name="level" id="level" class="form-control" placeholder="Level" >
+                                    <option>Level</option>
                                     <option name="level">Level 100</option>
                                     <option name="level">Level 200</option>
                                     <option name="level">Level 300</option>
@@ -78,10 +79,10 @@
 
                   <div class="form-group">
                     <div class="row">
-                        <label class="col-sm-3 control-label">Subject</label>
+                        <label class="col-sm-3 control-label">Course Title</label>
                         <div class="col-sm-9">
                             <select type="text" name="subject_id" id="subject_id" class="form-control"   placeholder="Subject" required="">
-                                <option value="">--Select Subject--</option>
+                                <option value="">Course Title</option>
                                     <?php  
                                     $c1 = "SELECT * FROM `tbl_subject`";
                                     $result = $conn->query($c1);

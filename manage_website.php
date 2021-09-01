@@ -91,8 +91,6 @@ while($row=mysqli_fetch_array($query))
   extract($row);
   $title = $row['title'];
   $short_title = $row['short_title'];
-  $currency_code = $row['currency_code'];
-  $currency_symbol = $row['currency_symbol'];
   $website_logo = $row['logo'];
   $login_logo = $row['login_logo'];
   $invoice_logo = $row['invoice_logo'];
@@ -149,23 +147,23 @@ while($row=mysqli_fetch_array($query))
 
                                       
 
-                                         <div class="form-group">
+                                         <!-- <div class="form-group">
                                             <div class="row">
                                                 <label class="col-sm-3 control-label">Currency Code</label>
                                                 <div class="col-sm-9">
                                                     <input type="text" value="<?php echo $currency_code;?>"  name="currency_code" class="form-control">
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
 
-                                         <div class="form-group">
+                                         <!-- <div class="form-group">
                                             <div class="row">
                                                 <label class="col-sm-3 control-label">Currency Symbol</label>
                                                 <div class="col-sm-9">
                                                     <input type="text" value="<?php echo $currency_symbol;?>" name="currency_symbol" class="form-control">
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
 
                                          <div class="form-group">
                                             <div class="row">

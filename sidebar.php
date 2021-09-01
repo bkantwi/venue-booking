@@ -29,7 +29,7 @@
                     <ul id="sidebarnav">
                         <li class="nav-devider"></li>
                         <li class="nav-label">Home</li>
-                        <li> <a href="index.php" aria-expanded="false"><i class="fa fa-window-maximize"></i>Dashboard</a>
+                        <!-- <li> <a href="index.php" aria-expanded="false"><i class="fa fa-window-maximize"></i>Dashboard</a> -->
                         </li>
 
                         <?php if(isset($useroles)){  if(in_array("manage_attendence",$useroles)){ ?> 
@@ -98,8 +98,8 @@
 
                     <?php if(isset($useroles)){  if(in_array("manage_exam",$useroles)){ ?> 
                          <!-- <li class="nav-label">Class</li> -->
-                        <li> <a class="has-arrow" href="#" aria-expanded="false"><i class="fa fa-home"></i><span class="hide-menu">Exam Management</span></a>
-                            <ul aria-expanded="false" class="collapse"> 
+                        <!-- <li> <a class="has-arrow" href="#" aria-expanded="false"><i class="fa fa-home"></i><span class="hide-menu">Exam Management</span></a>
+                            <ul aria-expanded="false" class="collapse">  -->
                                 <li><a href="add_roomtype.php">Add Room Type</a></li>
                                 <li><a href="view_roomtype.php">View Room Type</a></li>
                                 <li><a href="add_room.php">Add Room</a></li>
@@ -108,8 +108,8 @@
                                 <li><a href="view_exam.php">View Exam</a></li>
                                 <li><a href="add_allotment.php">Add Allotment</a></li>
                                 <li><a href="view_allotment.php">View Allotment</a></li>
-                            </ul>
-                        </li>
+                            <!-- </ul>
+                        </li> -->
                     <?php } } ?>
                    
                   <?php if(isset($useroles)){  if(in_array("manage_user",$useroles)){ ?> 
