@@ -33,10 +33,10 @@
                                     <form class="form-horizontal" method="POST" action="pages/exam.php" name="userform" enctype="multipart/form-data">
                                     <div class="form-group">
                                             <div class="row">
-                                                <label class="col-sm-3 control-label">Class</label>
+                                                <label class="col-sm-3 control-label">Programme</label>
                                                 <div class="col-sm-9">
-                                                    <select type="text" name="class_id" id="class_id" class="form-control"   placeholder="Class" required="">
-                                                        <option value="">--Select Class--</option>
+                                                    <select type="text" name="class_id" id="class_id" class="form-control"  placeholder="Class" required="true">
+                                                        <option value="">--Programme--</option>
                                                             <?php  
                                                             $c1 = "SELECT * FROM `tbl_class`";
                                                             $result = $conn->query($c1);
@@ -59,10 +59,10 @@
 
                   <div class="form-group">
                     <div class="row">
-                        <label class="col-sm-3 control-label">Subject</label>
+                        <label class="col-sm-3 control-label">Course Title</label>
                         <div class="col-sm-9">
                             <select type="text" name="subject_id" id="subject_id" class="form-control"   placeholder="Subject" required="">
-                                <option value="">--Select Subject--</option>
+                                <option value="">--Course Title--</option>
                                     <?php  
                                     $c1 = "SELECT * FROM `tbl_subject`";
                                     $result = $conn->query($c1);
