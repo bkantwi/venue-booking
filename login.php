@@ -48,7 +48,7 @@ $pass = hash('sha256', $salt . $passw);
     <p>Login Successfully</p>
     <p>
     
-     <?php echo "<script>setTimeout(\"location.href = 'add_exam.php';\",1500);</script>"; ?>
+     <?php echo "<script>setTimeout(\"location.href = 'add_allotment.php';\",1500);</script>"; ?>
     </p>
   </div>
 </div>

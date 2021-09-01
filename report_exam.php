@@ -9,11 +9,11 @@
             
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-primary"> Exam Report</h3> </div>
+                    <h3 class="text-primary"> Quiz History </h3> </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                        <li class="breadcrumb-item active">Exam Report</li>
+                        <li class="breadcrumb-item active">Quiz History</li>
                     </ol>
                 </div>
             </div>
@@ -25,7 +25,7 @@
                                     <table id="myTable" class="table table-bordered table-striped">
                                         <thead>
                                             <tr>
-                                                <th>Exam Name</th>
+                                                <!-- <th>Exam Name</th> -->
                                                 <th>Exam Date</th>
                                                 <th>Time</th> 
                                                 <th>Class Name</th>
@@ -35,7 +35,7 @@
                                         <tbody>
                                     <?php 
                                     include 'connect.php';
-                                  $sql1 = "SELECT * FROM  exam ";
+                                  $sql1 = "SELECT * FROM  allot ";
                                    $result1 = $conn->query($sql1);
                                    while($row = $result1->fetch_assoc()) {
 
@@ -48,8 +48,7 @@
                                     $sres2 = mysqli_fetch_array($sr2); 
                                       ?>
                                             <tr>
-                                                <td><?php echo $row['name']; ?></td>
-                                                <td><?php echo $row['exam_date']; ?></td>
+                                                <td><?php echo $row['quiz_date']; ?></td>
                                                 <td><?php echo $row['start_time'].'-'.$row['end_time']; ?></td>
                                                 <td><?php echo $sres1['classname']; ?></td>
                                                 <td><?php echo $sres2['subjectname']; ?></td>

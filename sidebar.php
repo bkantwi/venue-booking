@@ -31,6 +31,8 @@
                         <!-- <li class="nav-label">Home</li> -->
                         <!-- <li> <a href="index.php" aria-expanded="false"><i class="fa fa-window-maximize"></i>Dashboard</a> -->
                         </li>
+                        <li><a href="add_allotment.php">Schedule Quiz</a></li>
+                        <!-- <li><a href="view_allotment.php">View Allotment</a></li> -->
 
                         <?php if(isset($useroles)){  if(in_array("manage_attendence",$useroles)){ ?> 
                          <!-- <li class="nav-label">Attendence</li> -->
@@ -50,9 +52,9 @@
                         <!-- <li> <a class="has-arrow" href="#" aria-expanded="false"><i class="fa fa-home"></i><span class="hide-menu">Class Management</span></a> -->
                             <!-- <ul aria-expanded="false" class="collapse"> -->
                             <?php if(isset($useroles)){  if(in_array("add_class",$useroles)){ ?> 
-                                <li><a href="add_class.php">Add Class</a></li>
+                                <!-- <li><a href="add_class.php">Add Class</a></li> -->
                             <?php } } ?>
-                                <li><a href="view_class.php">View Class</a></li>
+                                <!-- <li><a href="view_class.php">View Class</a></li> -->
                             <!-- </ul> -->
                         <!-- </li> -->
                     <?php } } ?>
@@ -62,9 +64,9 @@
                         <!-- <li> <a class="has-arrow" href="#" aria-expanded="false"><i class="fa fa-newspaper-o"></i><span class="hide-menu">Subject Management</span></a>
                             <ul aria-expanded="false" class="collapse"> -->
                             <?php if(isset($useroles)){  if(in_array("add_subject",$useroles)){ ?> 
-                                <li><a href="add_subject.php">Add Subject</a></li>
+                                <!-- <li><a href="add_subject.php">Add Subject</a></li> -->
                             <?php } } ?>
-                                <li><a href="view_subject.php">View Subject</a></li>
+                                <!-- <li><a href="view_subject.php">View Subject</a></li> -->
                             <!-- </ul>
                         </li> -->
                     <?php } } ?>
@@ -100,16 +102,14 @@
                          <!-- <li class="nav-label">Class</li> -->
                         <!-- <li> <a class="has-arrow" href="#" aria-expanded="false"><i class="fa fa-home"></i><span class="hide-menu">Exam Management</span></a>
                             <ul aria-expanded="false" class="collapse">  -->
-                                <li><a href="add_roomtype.php">Add Room Type</a></li>
-                                <li><a href="view_roomtype.php">View Room Type</a></li>
-                                <li><a href="add_room.php">Add Room</a></li>
-                                <li><a href="view_room.php">View Room</a></li>
+                                <!-- <li><a href="add_roomtype.php">Add Room Type</a></li>
+                                <li><a href="view_roomtype.php">View Room Type</a></li> -->
+                                <!-- <li><a href="add_room.php">Add Room</a></li>
+                                <li><a href="view_room.php">View Room</a></li> -->
                                 <!-- <li><a href="add_exam.php">Add Exam</a></li>
                                 <li><a href="view_exam.php">View Exam</a></li> -->
-                                <li><a href="add_allotment.php">Add Allotment</a></li>
-                                <li><a href="view_allotment.php">View Allotment</a></li>
-                                <li><a href="today_exam.php">Today's Exam</a></li>
-                                <li><a href="report_exam.php">All Exam</a></li>
+                                <!-- <li><a href="today_exam.php">Today's Exam</a></li> -->
+                                <li><a href="report_exam.php">Quiz History</a></li>
                             <!-- </ul>
                         </li> -->
                     <?php } } ?>
