@@ -106,10 +106,8 @@
                                 <li><a href="view_room.php">View Room</a></li>
                                 <li><a href="add_exam.php">Add Exam</a></li>
                                 <li><a href="view_exam.php">View Exam</a></li>
-
-                                <!-- Commented Allotment Out. Did not see the use of it -->
-                                <!-- <li><a href="add_allotment.php">Add Allotment</a></li>
-                                <li><a href="view_allotment.php">View Allotment</a></li> -->
+                                <li><a href="add_allotment.php">Add Allotment</a></li>
+                                <li><a href="view_allotment.php">View Allotment</a></li>
                             </ul>
                         </li>
                     <?php } } ?>

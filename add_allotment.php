@@ -33,10 +33,10 @@
                                     <form class="form-horizontal" method="POST" action="pages/allot.php" name="userform" enctype="multipart/form-data">
             <div class="form-group">
                     <div class="row">
-                        <label class="col-sm-3 control-label">Class</label>
+                        <label class="col-sm-3 control-label">Programme</label>
                         <div class="col-sm-9">
                             <select type="text" name="class_id" id="class_id" class="form-control"   placeholder="Class" required="">
-                                <option value="">--Select Class--</option>
+                                <option value="">Programme</option>
                                     <?php  
                                     $c1 = "SELECT * FROM `tbl_class`";
                                     $result = $conn->query($c1);
@@ -60,6 +60,19 @@
                                     ?>
                             </select>
                         </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <label class="col-sm-3 control-label">Class Capacity</label>
+                            <div class="col-sm-9">
+                                <select type="text" name="level" id="level" class="form-control" placeholder="Level" >
+                                    <option name="level">Level 100</option>
+                                    <option name="level">Level 200</option>
+                                    <option name="level">Level 300</option>
+                                    <option name="level">Level 400</option>
+                                </select>
+                            </div>
                     </div>
                 </div>
 
@@ -135,7 +148,7 @@
                                             <div class="row">
                                                 <label class="col-sm-3 control-label">Class Capacity</label>
                                                 <div class="col-sm-9">
-                                                  <input type="text" name="class_capacity" id="class_capacity" class="form-control" placeholder="Class Capacity" readonly>
+                                                  <input type="text" name="class_capacity" id="class_capacity" class="form-control" placeholder="Class Capacity" >
                                                 </div>
                                             </div>
                                         </div>
