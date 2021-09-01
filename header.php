@@ -61,7 +61,7 @@
                                     }
                                 ?>
                                 <img src="uploadImage/Profile/<?=$image?>" alt="user" class="profile-pic" />
-                                <p><?=$fname?></p></a>
+                                <p><?=$fname?> <?=$lname?></p></a>
                             <div class="dropdown-menu dropdown-menu-right animated zoomIn">
                                 <ul class="dropdown-user">
                                     <li><a href="profile.php"><i class="ti-user"></i> Profile</a></li>
