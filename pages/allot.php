@@ -3,12 +3,12 @@ date_default_timezone_set('Asia/Kolkata');
 $current_date = date('Y-m-d');
 include('../connect.php');
 extract($_POST);
-   $sql = "INSERT INTO `allot` (`class_id`,`room_type_id`,`subject_id`,`exam_id`,`level`,`added_date`) VALUES ('$class_id','$room_type_id','$subject_id','$exam_id','$level','".date('Y-m-d')."')";
+   $sql = "INSERT INTO `allot` (`class_id`,`room_type_id`,`subject_id`,`level`,`added_date`) VALUES ('$class_id','$room_type_id','$subject_id','$level','".date('Y-m-d')."')";
  if ($conn->query($sql) === TRUE) {
  	 $last_id = $conn->insert_id;
- 	 $s1 = "SELECT * FROM `exam` WHERE id='".$exam_id."'";
- 	 $sr = $conn->query($s1);
-    $sres = mysqli_fetch_array($sr);
+ 	//  $s1 = "SELECT * FROM `exam` WHERE id='".$exam_id."'";
+ 	//  $sr = $conn->query($s1);
+    // $sres = mysqli_fetch_array($sr);
 
     $s2 = "SELECT * FROM `room` WHERE type_id='".$room_type_id."'";
  	 $sr2 = $conn->query($s2);

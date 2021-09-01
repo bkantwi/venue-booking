@@ -95,24 +95,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="form-group">
-                    <div class="row">
-                        <label class="col-sm-3 control-label">Exam</label>
-                        <div class="col-sm-9">
-                            <select type="text" name="exam_id" id="exam_id" class="form-control"   placeholder="Exam" required="">
-                                <option value="">--Select Exam--</option>
-                                    <?php  
-                                    $c1 = "SELECT * FROM `exam`";
-                                    $result = $conn->query($c1);
-                                        while ($row = mysqli_fetch_array($result)) {?>
-                                            <option value="<?php echo $row["id"];?>" style="display: none;" data-id="<?php echo $row["subject_id"];?>">
-                                                <?php echo $row['name'];?>
-                                            </option>
-                                            <?php } ?>
-                            </select>
-                        </div>
-                    </div>
-                </div>
                 
                 <div class="form-group">
                     <div class="row">
