@@ -109,7 +109,7 @@
                                 <!-- <li><a href="add_exam.php">Add Exam</a></li>
                                 <li><a href="view_exam.php">View Exam</a></li> -->
                                 <!-- <li><a href="today_exam.php">Today's Exam</a></li> -->
-                                <li><a href="report_exam.php">Quiz History</a></li>
+                                <li><a href="report_exam.php">Scheduled Quizzes</a></li>
                             <!-- </ul>
                         </li> -->
                     <?php } } ?>
