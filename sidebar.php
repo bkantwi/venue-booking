@@ -99,16 +99,6 @@
                     <?php } } ?>  -->
 
                     <?php if(isset($useroles)){  if(in_array("manage_exam",$useroles)){ ?> 
-                         <!-- <li class="nav-label">Class</li> -->
-                        <!-- <li> <a class="has-arrow" href="#" aria-expanded="false"><i class="fa fa-home"></i><span class="hide-menu">Exam Management</span></a>
-                            <ul aria-expanded="false" class="collapse">  -->
-                                <!-- <li><a href="add_roomtype.php">Add Room Type</a></li>
-                                <li><a href="view_roomtype.php">View Room Type</a></li> -->
-                                <!-- <li><a href="add_room.php">Add Room</a></li>
-                                <li><a href="view_room.php">View Room</a></li> -->
-                                <!-- <li><a href="add_exam.php">Add Exam</a></li>
-                                <li><a href="view_exam.php">View Exam</a></li> -->
-                                <!-- <li><a href="today_exam.php">Today's Exam</a></li> -->
                                 <li><a href="report_exam.php">Scheduled Quizzes</a></li>
                             <!-- </ul>
                         </li> -->
