@@ -26,7 +26,7 @@ if (isset($btn_save)) {
 
        $success = true;
 
-       $errorMsg = 'Records added successfully';
+       $errorMsg = 'Booking successful';
 
        $error_html = '<p class="alert alert-success"><span class="fa fa-exclamation-circle"></span> '.$errorMsg.'</p>';
 
