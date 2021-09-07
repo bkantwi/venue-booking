@@ -4,7 +4,7 @@
 html, body{
     height: 100%;
     overflow: hidden;
-    background: blue;
+    background: rgb(21, 21, 224);
     /* background: var(--mango-gradient); */
 }
 
