@@ -111,7 +111,7 @@ $row_login = mysqli_fetch_array($result_login);
                     <form method="POST">
                         <div class="titles">
                             <h6>Book A Venue</h6>
-                            <h3>Ready to Login</h3>
+                            <h3>Login to Book</h3>
                         </div>
                         <div class="form-group">
                             <input type="text" placeholder="Email" name="email" class="form-input">
