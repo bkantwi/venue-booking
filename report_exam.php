@@ -28,8 +28,8 @@
                                                 <!-- <th>Exam Name</th> -->
                                                 <th>Quiz Date</th>
                                                 <th>Time</th> 
-                                                <th>Class Name</th>
-                                                <th>Subject Name</th>
+                                                <th>Programme</th>
+                                                <th>Course Title</th>
                                             </tr>
                                         </thead>
                                         <tbody>
