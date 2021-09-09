@@ -26,7 +26,7 @@
                                         <thead>
                                             <tr>
                                                 <!-- <th>Exam Name</th> -->
-                                                <th>Exam Date</th>
+                                                <th>Quiz Date</th>
                                                 <th>Time</th> 
                                                 <th>Class Name</th>
                                                 <th>Subject Name</th>
