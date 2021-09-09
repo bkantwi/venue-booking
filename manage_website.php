@@ -58,7 +58,7 @@ if(isset($_POST["btn_web"]))
      $background_login_image =$_POST['old_back_login_image'];
   }
   
-   $q1="UPDATE `manage_website` SET `title`='$title',`short_title`='$short_title',`logo`='$website_logo',`currency_code`= '$currency_code',`currency_symbol`= '$currency_symbol',`login_logo`='$login_logo',`invoice_logo`='$invoice_logo' , `background_login_image` = '$background_login_image'";
+   $q1="UPDATE `manage_website` SET `title`='$title',`short_title`='$short_title',`logo`='$website_logo',`login_logo`='$login_logo',`invoice_logo`='$invoice_logo' , `background_login_image` = '$background_login_image'";
   if ($conn->query($q1) === TRUE) {
    
       $_SESSION['success']='Record Successfully Updated';

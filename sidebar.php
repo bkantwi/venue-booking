@@ -71,37 +71,8 @@
                         </li> -->
                     <?php } } ?>
 
-
-                    <!-- Commented student Management out -->
-                    <!-- <?php if(isset($useroles)){  if(in_array("manage_student",$useroles)){ ?>  -->
-                         <!-- <li class="nav-label">Student</li> -->
-                        <!-- <li> <a class="has-arrow" href="#" aria-expanded="false"><i class="fa fa-users"></i><span class="hide-menu">Student Management</span></a>
-                            <ul aria-expanded="false" class="collapse">
-                            <?php if(isset($useroles)){  if(in_array("add_student",$useroles)){ ?> 
-                                <li><a href="add_student.php">Add Student</a></li>
-                            <?php } } ?>
-                                <li><a href="view_student.php">View Student</a></li>
-                            </ul>
-                        </li>
-                    <?php } } ?> -->
-
-                    <!-- Commented teacher management out. Same as add user -->
-                    <!-- <?php if(isset($useroles)){  if(in_array("manage_teacher",$useroles)){ ?>  -->
-                         <!-- <li class="nav-label">Teacher</li> -->
-                        <!-- <li> <a class="has-arrow" href="#" aria-expanded="false"><i class="fa fa-user"></i><span class="hide-menu">Teacher Management</span></a>
-                            <ul aria-expanded="false" class="collapse">
-                            <?php if(isset($useroles)){  if(in_array("add_teacher",$useroles)){ ?> 
-                                <li><a href="add_teacher.php">Add Teacher</a></li>
-                            <?php } } ?>
-                                <li><a href="view_teacher.php">View Teacher</a></li>
-                            </ul>
-                        </li>
-                    <?php } } ?>  -->
-
                     <?php if(isset($useroles)){  if(in_array("manage_exam",$useroles)){ ?> 
                                 <li><a href="report_exam.php">Scheduled Quizzes</a></li>
-                            <!-- </ul>
-                        </li> -->
                     <?php } } ?>
                    
                   <?php if(isset($useroles)){  if(in_array("manage_user",$useroles)){ ?> 
@@ -123,20 +94,6 @@
                                <li><a href="view_role.php">View Role</a></li>
                             </ul>
                         </li>
-
-                         <!-- <li> <a class="has-arrow" href="#" aria-expanded="false"><i class="fa fa-cog"></i><span class="hide-menu">Setting</span></a>
-                            <ul aria-expanded="false" class="collapse">
-                               <li><a href="manage_website.php">Appearance Management</a></li>
-                              <li><a href="email_config.php">Email Management</a></li>
-                            </ul>
-                        </li>  -->
-                        <!-- <li class="nav-label">Exam Details</li>  -->
-                        <!-- <li>  <a class="has-arrow" href="#" aria-expanded="false"><i class="fa fa-file"></i><span class="hide-menu">Report Management</span></a>
-                            <ul aria-expanded="false" class="collapse"> -->
-                                <!-- <li><a href="today_exam.php">Today's Exam</a></li>
-                                <li><a href="report_exam.php">All Exam</a></li> -->
-                            <!-- </ul> -->
-                        <!-- </li> -->
                     <?php } ?>
                     </ul>   
                 </nav>

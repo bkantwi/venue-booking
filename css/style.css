@@ -1586,8 +1586,8 @@ textarea {
   color: #f9fdff;
 }
 .sidebar-nav ul li a:hover i {
-  /*color: #1976d2;*/
-  #f9fdff;
+  color: #1976d2;
+  /* #f9fdff; */
 }
 .sidebar-nav ul li a.active {
   /*color: #1976d2;*/

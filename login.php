@@ -1,7 +1,7 @@
 <?php session_start();?>
 <?php include('head.php');?>
 <link rel="stylesheet" href="popup_style.css">
-<link rel="stylesheet" href="./css/stylenew.css">
+<link rel="stylesheet" href="css/loginstyle.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
     <link rel="stylesheet"
