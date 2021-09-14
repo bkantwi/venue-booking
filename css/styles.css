@@ -1528,7 +1528,7 @@ textarea {
   z-index: 20;
   padding-top: 60px;
  /* background: #fff;*/
- background: #02756a;
+ background: blue;
   -webkit-box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
   box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
 }
@@ -1562,7 +1562,7 @@ textarea {
 }
 .sidebar-nav {
  /* background: #fff;*/
- background: #02756a;
+ background: blue;
   padding: 0;
 }
 .sidebar-nav ul {
@@ -1591,8 +1591,8 @@ textarea {
 }
 .sidebar-nav ul li a.active {
   /*color: #1976d2;*/
-background: #ff9800 !important;
-  color: #f9fdff;
+background: yellow !important;
+  color: yellow;
   font-weight: 500;
 }
 .sidebar-nav ul li a.active i {
@@ -1644,19 +1644,19 @@ background: #ff9800 !important;
       height: 48px;
   font-weight: 400;
  /* background: #fff;*/
-  background: #ff9800 !important;
+  background: yellow !important;
   color: #1976d2;
 }
 .sidebar-nav > ul > li.active > a {
   padding: 6%;
   /*color: #1976d2;*/
-  color: #fdfeff;
+  color: red;
   font-weight: 500;
   border-left: 3px solid #fff;
 }
 .sidebar-nav > ul > li.active > a i {
   /*color: #1976d2;*/
-  color: #f2f3f5;
+  color: red;
 }
 .sidebar-nav .has-arrow {
   position: relative;
@@ -2045,7 +2045,7 @@ background: #ff9800 !important;
 .footer {
   background: #ffffff none repeat scroll 0 0;
   border-top: 1px solid rgba(120, 130, 140, 0.13);
-  color: #02756a;
+  color: blue;
   left: 0;
   padding: 17px 15px;
   position: absolute;
