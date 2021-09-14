@@ -25,7 +25,7 @@
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
     
     <link href="css/helper.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/newstyles.css" rel="stylesheet">
  <link rel="stylesheet" href="css/lib/html5-editor/bootstrap-wysihtml5.css" />
  <link href="css/lib/calendar2/semantic.ui.min.css" rel="stylesheet">
     <link href="css/lib/calendar2/pignose.calendar.min.css" rel="stylesheet">
