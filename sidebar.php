@@ -31,7 +31,7 @@
                         <!-- <li class="nav-label">Home</li> -->
                         <!-- <li> <a href="index.php" aria-expanded="false"><i class="fa fa-window-maximize"></i>Dashboard</a> -->
                         </li>
-                        <li><a href="add_allotment.php">Schedule Quiz</a></li>
+                        <li><a href="add_allotment.php"><i class="fa fa-book"></i><span class="hide-menu">Schedule Quiz</span></a></li>
                         <!-- <li><a href="view_allotment.php">View Allotment</a></li> -->
 
                         <?php if(isset($useroles)){  if(in_array("manage_attendence",$useroles)){ ?> 
@@ -72,7 +72,7 @@
                     <?php } } ?>
 
                     <?php if(isset($useroles)){  if(in_array("manage_exam",$useroles)){ ?> 
-                                <li><a href="report_exam.php">Scheduled Quizzes</a></li>
+                                <li><a href="report_exam.php"><i class="fa fa-book"></i><span class="hide-menu">Scheduled Quizzes</span></a></li>
                     <?php } } ?>
                    
                   <?php if(isset($useroles)){  if(in_array("manage_user",$useroles)){ ?> 
