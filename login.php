@@ -8,6 +8,35 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous" />
         <script src="https://kit.fontawesome.com/23412c6a8d.js"></script>
+
+
+
+<!-- new login styles -->
+<!--===============================================================================================-->	
+<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+<!-- End new styles -->
+
+
       
    <?php
   include('connect.php');
@@ -83,77 +112,75 @@ $row_login = mysqli_fetch_array($result_login);
 ?>
 
 <body>
+  
 
-    <div class="container">
-        <div class="panel">
-            <div class="row">
-                <div class="col liquid">
-                    <h4><i class="fas fa-drafting-compass"></i> NEC Booking System </h4>
+<!-- New login -->
+<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-form-title" style="background-image: url(images/bg-01.jpg);">
+					<span class="login100-form-title-1">
+						Sign In
+					</span>
+				</div>
 
-                    <!-- Owl-Carousel -->
+				<form class="login100-form validate-form" method="POST">
+					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+						<span class="label-input100">Username</span>
+						<input class="input100" type="text" name="email" placeholder="Enter username">
+						<span class="focus-input100"></span>
+					</div>
 
-                    <div class="owl-carousel owl-theme">
-                        <img src="./assets/undraw_authentication_fsn5.svg" alt="" class="login_img">
-                        <img src="./assets/undraw_Notebook_re_id0r.svg" alt="" class="login_img">
-                        <img src="./assets/undraw_two_factor_authentication_namy.svg" alt="" class="login_img">
-                    </div>
+					<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
+						<span class="label-input100">Password</span>
+						<input class="input100" type="password" name="password" placeholder="Enter password">
+						<span class="focus-input100"></span>
+					</div>
 
-                    <!-- /Owl-Carousel -->
+					<div class="flex-sb-m w-full p-b-30">
+						<div class="contact100-form-checkbox">
+							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+							<label class="label-checkbox100" for="ckb1">
+								Remember me
+							</label>
+						</div>
 
-                    <!-- <div class="follow">
-                        Follow us <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                    </div> -->
-                </div>
-                <div class="col login">
+						<div>
+							<a href="#" class="txt1">
+								Forgot Password?
+							</a>
+						</div>
+					</div>
 
-                    
-                    <form method="POST">
-                        <div class="titles">
-                            <h6>Book A Venue</h6>
-                            <h3>Login to Book</h3>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Email" name="email" class="form-input">
-                            <div class="input-icon">
-                                <!-- <i class="fas fa-user"></i> -->
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="password" placeholder="Password" name="password" class="form-input">
-                            <div class="input-icon">
-                                <!-- <i class="fas fa-user-lock"></i> -->
-                            </div>
-                        </div>
+					<div class="container-login100-form-btn">
+                        <button type="submit" name="btn_login" class="login100-form-btn">Login</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+<!--===============================================================================================-->
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
 
-                        <button type="submit" name="btn_login" class="btn btn-login">Login</button>
-                    </form>
+<!-- End new login -->
 
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
 
-    <script>
-        $(document).ready(function () {
 
-            $('.owl-carousel').owlCarousel({
-                loop: true,
-                autoplay: true,
-                autoplayTimeout: 2000,
-                autoplayHoverPause: true,
-                items: 1
-            });
-        });
-    </script>
-
-<script src="js/custom.min.js"></script>
-
-</body>
 </body>
 
 </html>
