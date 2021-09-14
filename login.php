@@ -32,7 +32,7 @@
 	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
 <!--===============================================================================================-->
 <!-- End new styles -->
 
@@ -122,14 +122,14 @@ $row_login = mysqli_fetch_array($result_login);
 				</div>
 				<form class="login100-form validate-form" method="POST">
 					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
-						<span class="label-input100">Username</span>
-						<input class="input100" type="text" name="email" placeholder="Enter username">
+						<span class="label-input100">User Email</span>
+						<input class="input100" type="text" name="email" placeholder="Enter Email" required="true">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
 						<span class="label-input100">Password</span>
-						<input class="input100" type="password" name="password" placeholder="Enter password">
+						<input class="input100" type="password" name="password" placeholder="Enter password" required="true">
 						<span class="focus-input100"></span>
 					</div>
 
@@ -141,11 +141,11 @@ $row_login = mysqli_fetch_array($result_login);
 							</label> -->
 						</div>
 
-						<div>
+						<!-- <div>
 							<a href="#" class="txt1">
 								Forgot Password?
 							</a>
-						</div>
+						</div> -->
 					</div>
 
 					<div class="container-login100-form-btn">
