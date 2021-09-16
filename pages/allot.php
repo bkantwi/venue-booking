@@ -16,7 +16,7 @@ if (isset($btn_save)) {
 
    $seats_left = $room_capacity - $current_alot_value;
 
-   if ($seats_left > $class_capacity) {
+   if ($seats_left > $class_capacity & $start_time == $start_time) {
 
        $add_allotment = $conn->query("INSERT INTO `allot` (`class_id`,`room_type_id`,`subject_id`,`level`,`quiz_date`,`start_time`,`end_time`, `alot_number`) VALUES ('$class_id','$room_type_id','$subject_id','$level','$quiz_date','$start_time','$end_time', '$class_capacity')");
 
