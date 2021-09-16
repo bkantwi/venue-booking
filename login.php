@@ -136,16 +136,16 @@ $row_login = mysqli_fetch_array($result_login);
 					<div class="flex-sb-m w-full p-b-30">
 						<div class="contact100-form-checkbox">
 							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-							<!-- <label class="label-checkbox100" for="ckb1">
+							<label class="label-checkbox100" for="ckb1">
 								Remember me
-							</label> -->
+							</label>
 						</div>
 
-						<!-- <div>
+						<div>
 							<a href="#" class="txt1">
 								Forgot Password?
 							</a>
-						</div> -->
+						</div>
 					</div>
 
 					<div class="container-login100-form-btn">

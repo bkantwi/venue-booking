@@ -72,7 +72,7 @@
                     <?php } } ?>
 
                     <?php if(isset($useroles)){  if(in_array("manage_exam",$useroles)){ ?> 
-                                <li><a href="report_exam.php"><i class="fa fa-book"></i><span class="hide-menu">Scheduled Quizzes</span></a></li>
+                                <li><a href="report_exam.php"><i class="fa fa-clock-o"></i><span class="hide-menu">Scheduled Quizzes</span></a></li>
                     <?php } } ?>
                    
                   <?php if(isset($useroles)){  if(in_array("manage_user",$useroles)){ ?> 
