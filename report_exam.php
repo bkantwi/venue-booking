@@ -28,6 +28,7 @@
                                                 <th>Quiz Date</th>
                                                 <th>Time</th> 
                                                 <th>Programme</th>
+                                                <th>Class Size</th>
                                                 <th>Course Title</th>
                                             </tr>
                                         </thead>
@@ -50,6 +51,7 @@
                                                 <td><?php echo $row['quiz_date']; ?></td>
                                                 <td><?php echo $row['start_time'].'-'.$row['end_time']; ?></td>
                                                 <td><?php echo $sres1['classname']; ?></td>
+                                                <td><?php echo $row['alot_number']; ?></td>
                                                 <td><?php echo $sres2['subjectname']; ?></td>
                                             </tr>
                                           <?php } ?>

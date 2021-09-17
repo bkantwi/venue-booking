@@ -16,7 +16,7 @@ if (isset($btn_save)) {
 
    $seats_left = $room_capacity - $current_alot_value;
 
-   if ($seats_left > $class_capacity & $start_time == $start_time) {
+   if ($seats_left > $class_capacity AND $start_time == $start_time) {
 
        $add_allotment = $conn->query("INSERT INTO `allot` (`class_id`,`room_type_id`,`subject_id`,`level`,`quiz_date`,`start_time`,`end_time`, `alot_number`) VALUES ('$class_id','$room_type_id','$subject_id','$level','$quiz_date','$start_time','$end_time', '$class_capacity')");
 
@@ -32,9 +32,9 @@ if (isset($btn_save)) {
 
 
    }else{
-    $errorMsg = 'There would not be enough seats available on the set period';
+        $errorMsg = 'There would not be enough seats available on the set period';
 
-    $error_html = '<p class="alert alert-danger"><span class="fa fa-exclamation-circle"></span> '.$errorMsg.'</p>';
+        $error_html = '<p class="alert alert-danger"><span class="fa fa-exclamation-circle"></span> '.$errorMsg.'</p>';
    }
    
    
