@@ -8,7 +8,7 @@ $success = false;
 extract($_POST);
 
 if (isset($btn_save)) {
-    $check_alot = $conn->query("SELECT SUM(alot_number) AS total FROM allot WHERE room_type_id = '$room_type_id' AND quiz_date = '$quiz_date' AND start_time = '$start_time' AND end_time = '$end_time'") or die(mysqli_error($conn));
+    $check_alot = $conn->query("SELECT SUM(alot_number) AS total FROM allot WHERE room_type_id = '$room_type_id' AND quiz_date = '$quiz_date' AND start_time = '$start_time' ") or die(mysqli_error($conn));
 
    $check_alot_item = mysqli_fetch_assoc($check_alot);
 
