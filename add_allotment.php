@@ -107,6 +107,7 @@ include('pages/allot.php');
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- Start time -->
                                     <div class="form-group">
                                         <div class="row">
                                             <label class="col-sm-3 control-label">Start Time</label>
