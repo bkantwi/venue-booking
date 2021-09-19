@@ -37,6 +37,7 @@ include('pages/allot.php');
                                 <?php endif; ?>
                                     <div class="form-group">
                                         <div class="row">
+                                            <!-- Select Programme -->
                                             <label class="col-sm-3 control-label">Programme</label>
                                             <div class="col-sm-9">
                                                 <select type="text" name="class_id" id="class_id" class="form-control"   placeholder="Class" required="">
