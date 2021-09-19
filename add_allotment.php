@@ -83,6 +83,7 @@ include('pages/allot.php');
 
                                     <div class="form-group">
                                         <div class="row">
+                                            <!-- Query course title from db with id -->
                                             <label class="col-sm-3 control-label">Course Title</label>
                                             <div class="col-sm-9">
                                                 <select type="text" name="subject_id" id="subject_id" class="form-control"   placeholder="Subject" required="">
