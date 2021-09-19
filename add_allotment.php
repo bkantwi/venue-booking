@@ -71,6 +71,7 @@ include('pages/allot.php');
                                             <label class="col-sm-3 control-label">Level</label>
                                             <div class="col-sm-9">
                                                 <select type="text" name="level" id="level" class="form-control" placeholder="Level" >
+                                                    <!-- Select a level -->
                                                     <option>Level</option>
                                                     <option name="level">Level 100</option>
                                                     <option name="level">Level 200</option>
