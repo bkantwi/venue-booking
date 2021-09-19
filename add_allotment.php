@@ -99,6 +99,7 @@ include('pages/allot.php');
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- Quiz date -->
                                     <div class="form-group">
                                         <div class="row">
                                             <label class="col-sm-3 control-label" for="date">Quiz Date:</label>
