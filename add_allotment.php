@@ -124,7 +124,7 @@ include('pages/allot.php');
                                   </div>
                               </div>
 
-
+                            <!-- Select the room -->
                               <div class="form-group">
                                 <div class="row">
                                     <label class="col-sm-3 control-label">Room</label>
