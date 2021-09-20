@@ -32,6 +32,7 @@ include('pages/allot.php');
                         <div class="card-body">
                             <div class="input-states">
                                 <form class="form-horizontal add_allotment_form" method="POST" action="" name="userform" enctype="multipart/form-data">
+                                    <!-- Including error message -->
                                     <?php if($errorMsg): ?>
                                     <div class="errorMsg mb-4"><?= $error_html; ?></div>
                                 <?php endif; ?>
