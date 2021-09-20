@@ -15,6 +15,7 @@ include('pages/allot.php');
 
     <div class="row page-titles">
         <div class="col-md-5 align-self-center">
+            <!-- Schedule quiz tab -->
             <h3 class="text-primary">Schedule Quiz</h3> </div>
             <div class="col-md-7 align-self-center">
                 <ol class="breadcrumb">
