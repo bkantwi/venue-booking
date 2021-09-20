@@ -1,5 +1,5 @@
+<!-- Adding all the includes -->
 <?php include('head.php');?>
-
 <?php include('header.php');?>
 <?php include('sidebar.php');?>
 
