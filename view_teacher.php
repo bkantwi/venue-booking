@@ -1,4 +1,4 @@
-
+<!-- include files -->
 <?php include('head.php');?>
 <?php include('header.php');?>
 <?php include('sidebar.php');
