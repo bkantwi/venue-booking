@@ -12,7 +12,7 @@ if(isset($_GET['id']))
     <h3 class="popup__content__title">
       Sure?
     </h1>
-    <p>Are You Sure To Delete This Record?</p>
+    <p>Do want to remove this record?</p>
     <p>
       <a href="del_teacher.php?id=<?php echo $_GET['id']; ?>" class="button button--success" data-for="js_success-popup">Yes</a>
       <a href="view_teacher.php" class="button button--error" data-for="js_success-popup">No</a>
