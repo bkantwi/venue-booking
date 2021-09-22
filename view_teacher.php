@@ -5,6 +5,7 @@
 
 if(isset($_GET['id']))
 { ?>
+<!-- Delete a teacher -->
 <div class="popup popup--icon -question js_question-popup popup--visible">
   <div class="popup__background"></div>
   <div class="popup__content">
