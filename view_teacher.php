@@ -10,7 +10,7 @@ if(isset($_GET['id']))
   <div class="popup__background"></div>
   <div class="popup__content">
     <h3 class="popup__content__title">
-      Sure
+      Sure?
     </h1>
     <p>Are You Sure To Delete This Record?</p>
     <p>
