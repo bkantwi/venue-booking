@@ -16,6 +16,7 @@ if (isset($btn_save)) {
 //     "SELECT * FROM logs WHERE date BETWEEN '" . $from_date . "' AND  '" . $to_date . "'
 // ORDER by id DESC"
 // new update
+// new
 
     // $check_time = $init." AND start_time BETWEEN '$start_time' AND  '$end_time' AND end_time BETWEEN '$start_time' AND  '$end_time'";
 
