@@ -5,7 +5,7 @@
 
 <?php
 include('connect.php');
-date_default_timezone_set('Asia/Kolkata');
+date_default_timezone_set('Africa/Accra');
 $current_date = date('Y-m-d');
 include('pages/allot.php');
 
