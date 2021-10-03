@@ -12,9 +12,11 @@ if (isset($btn_save)) {
 
     $check_alot_item = mysqli_fetch_assoc($check_alot);
 
-    $current_alot_value = $check_alot_item['total'];
+    $current_alot_value = $check_alot_item['total'] - 1;
 
     $seats_left = $room_capacity - $current_alot_value;
+
+    $condition_met = false;
 
     if (mysqli_num_rows($check_alot) > 0){
 
@@ -22,38 +24,33 @@ if (isset($btn_save)) {
 
             if (($start_time <= $check_alot_item['start_time'] || $start_time >= $check_alot_item['start_time'] && $end_time <= $check_alot_item['end_time'] || $end_time >= $check_alot_item['end_time']) && $seats_left > $class_capacity){
 
-                $add_allotment = $conn->query("INSERT INTO `allot` (`class_id`,`room_type_id`,`subject_id`,`level`,`quiz_date`,`start_time`,`end_time`, `alot_number`) VALUES ('$class_id','$room_type_id','$subject_id','$level','$quiz_date','$start_time','$end_time', '$class_capacity')");
-
-                $success = true;
-
-                $errorMsg = 'Booking successful';
-
-                $error_html = '<p class="alert alert-success"><span class="fa fa-exclamation-circle"></span> '.$errorMsg.'</p>';
+                $condition_met = true;
 
             }else{
-                $errorMsg = 'There would not be enough seats available on the set period';
 
-                $error_html = '<p class="alert alert-danger"><span class="fa fa-exclamation-circle"></span> '.$errorMsg.'</p>';
+                $condition_met = false;
 
             }
+
+        }
+        if ($condition_met == true){
+
+            $add_allotment = $conn->query("INSERT INTO `allot` (`class_id`,`room_type_id`,`subject_id`,`level`,`quiz_date`,`start_time`,`end_time`, `alot_number`) VALUES ('$class_id','$room_type_id','$subject_id','$level','$quiz_date','$start_time','$end_time', '$class_capacity')");
+
+            $success = true;
+
+            $errorMsg = 'Booking successful';
+
+            $error_html = '<p class="alert alert-success"><span class="fa fa-exclamation-circle"></span> '.$errorMsg.'</p>';
+
+        }else{
+            $errorMsg = 'There would not be enough seats available on the set period';
+
+            $error_html = '<p class="alert alert-danger"><span class="fa fa-exclamation-circle"></span> '.$errorMsg.'</p>';
+
         }
     }
 
-//    if ($seats_left > $class_capacity AND $start_time == $start_time) {
-//
-//        $add_allotment = $conn->query("INSERT INTO `allot` (`class_id`,`room_type_id`,`subject_id`,`level`,`quiz_date`,`start_time`,`end_time`, `alot_number`) VALUES ('$class_id','$room_type_id','$subject_id','$level','$quiz_date','$start_time','$end_time', '$class_capacity')");
-//
-//        $success = true;
-//
-//        $errorMsg = 'Booking successful';
-//
-//        $error_html = '<p class="alert alert-success"><span class="fa fa-exclamation-circle"></span> '.$errorMsg.'</p>';
-//    }
-//    else{
-//        $errorMsg = 'There would not be enough seats available on the set period';
-//
-//        $error_html = '<p class="alert alert-danger"><span class="fa fa-exclamation-circle"></span> '.$errorMsg.'</p>';
-//    }
    
    
 }
