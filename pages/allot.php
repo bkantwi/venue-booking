@@ -50,6 +50,7 @@ if (isset($btn_save)) {
                 $error_html = '<p class="alert alert-success"><span class="fa fa-exclamation-circle"></span> '.$errorMsg.'</p>';
 
             }else{
+
                 $errorMsg = 'There would not be enough seats available on the set period';
 
                 $error_html = '<p class="alert alert-danger"><span class="fa fa-exclamation-circle"></span> '.$errorMsg.'</p>';
@@ -63,6 +64,16 @@ if (isset($btn_save)) {
             $error_html = '<p class="alert alert-danger"><span class="fa fa-exclamation-circle"></span> '.$errorMsg.'</p>';
 
         }
+    }else{
+
+        $add_allotment = $conn->query("INSERT INTO `allot` (`class_id`,`room_type_id`,`subject_id`,`level`,`quiz_date`,`start_time`,`end_time`, `alot_number`) VALUES ('$class_id','$room_type_id','$subject_id','$level','$quiz_date','$start_time','$end_time', '$class_capacity')");
+
+        $success = true;
+
+        $errorMsg = 'Booking successful';
+
+        $error_html = '<p class="alert alert-success"><span class="fa fa-exclamation-circle"></span> '.$errorMsg.'</p>';
+
     }
 
    
