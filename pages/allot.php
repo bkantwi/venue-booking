@@ -10,7 +10,7 @@ extract($_POST);
 if (isset($btn_save)) {
     $check_alot = $conn->query("SELECT * FROM allot WHERE room_type_id = '$room_type_id' AND quiz_date = '$quiz_date'") or die(mysqli_error($conn));
 
-    $check_seat = $conn->query("SELECT SUM(alot_number) AS total FROM allot WHERE room_type_id = '$room_type_id' AND quiz_date = '$quiz_date' AND start_time >= '$start_time' AND end_time <= '$end_time'") or die(mysqli_error($conn));
+    $check_seat = $conn->query("SELECT SUM(alot_number) AS total FROM allot WHERE room_type_id = '$room_type_id' AND quiz_date = '$quiz_date' AND (start_time >= '$start_time' || start_time <= '$start_time') AND (end_time <= '$end_time' || end_time >= '$end_time')") or die(mysqli_error($conn));
 
     $check_alot_item = mysqli_fetch_assoc($check_alot);
 
@@ -26,7 +26,7 @@ if (isset($btn_save)) {
 
         foreach ($check_alot_item as $item){
 
-            if (($start_time <= $check_alot_item['start_time'] || $start_time >= $check_alot_item['start_time'] && $end_time <= $check_alot_item['end_time'] || $end_time >= $check_alot_item['end_time'])){
+            if (($start_time <= $check_alot_item['start_time'] || $start_time >= $check_alot_item['start_time']) && ($end_time <= $check_alot_item['end_time'] || $end_time >= $check_alot_item['end_time'])){
 
                 $condition_met = true;
 
